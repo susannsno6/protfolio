@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+/* TITLE */
+.main-title {
+  color: cyan;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+/* NAV */
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: cyan;
+}
+
+/* FIX CONTENT GOING UNDER HEADER */
+.hero {
+  padding-top: 80px;
+}
+body {
+  color: white;
+  background: black;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('ChatGPT\ Image\ Apr\ 20\,\ 2026\,\ 03_31_06\ PM.png') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  gap: 120px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+/* BOX STYLE */
+.box {
+  border: 2px solid cyan;
+  padding: 10px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.4);
+  transition: 0.4s;
+}
+
+.box:hover {
+  box-shadow: 0 0 20px cyan;
+  transform: scale(1.05);
+}
+
+/* IMAGE */
+.image-box img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* TEXT */
+.text-box {
+  max-width: 350px;
+}
+
+.text-box span {
+  color: cyan;
+}
+
+.text-box button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: cyan;
+  border: none;
+  cursor: pointer;
+}
+
+/* PROJECTS */
+
+.projects {
+  background: url(ChatGPT\ Image\ Apr\ 20\,\ 2026\,\ 03_31_06\ PM.png);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  border: 2px solid cyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background: cyan;
+  color: black;
+}
+* {
+  object-fit: cover;
+}
+
+.text-box {
+  max-width: 350px;
+}
+
+.text-box span {
+  color: cyan;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: cyan;
+  border: none;
+  cursor: pointer;
+}
+
+.projects {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 2px solid cyan;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: cyan;
+  color: black;
+}
+
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+}
+
+/* MOBILE */
+@media(max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <h1 class="main-title">Susan Shakya PORTFOLIO</h1>
+
+  <nav class="nav">
+    <a href="#">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+
+  <div class="container">
+
+    <div class="box image-box">
+      <img src="photo.jpg" alt="Profile">
+    </div>
+
+    <div class="box text-box">
+      <h1>Hello, I'm <span>Susan Shakya</span></h1>
+      <h2 class="typing"></h2>
+
+      <p>
+        I am Susan Shakya <br>
+        Born 2004 <br>
+        AI tools operator <br>
+        Graphic Designer <br>
+        Content Creator <br>
+        Business Studies background <br>
+      </p>
+
+      <button onclick="scrollToProjects()">View Projects</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <h2>My Projects</h2>
+
+  <div class="project-container">
+
+    <div class="card" onclick="openPDF('nepal-airlines.pdf')">
+      Nepal Airlines <br> click here
+    </div>
+
+    <div class="card" onclick="openPDF('graphic-designing.pdf')">
+      Graphic Designing click here
+    </div>
+
+    <div class="card" onclick="openPDF('content-creation.pdf')">
+      Content Creation <br> click here 
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+
+  <form id="contactForm">
+
+    <!-- IMPORTANT: name attributes added -->
+    <input type="text" name="user_name" placeholder="Your Name" required>
+
+    <input type="email" name="user_email" placeholder="Your Email" required>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+  </form>
+</section>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
