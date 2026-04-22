@@ -69,6 +69,7 @@ body {
   gap: 120px;
   flex-wrap: wrap;
   z-index: 1;
+  
 }
 
 /* BOX STYLE */
@@ -127,13 +128,18 @@ body {
 }
 
 .card {
-  width: 200px;
-  height: 300px;
+  width: 150px;
+  height: 200px;
   border: 2px solid cyan;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.3s;
+}
+.card img{
+  width: 100px;
+  border-radius: 10px;
+
 }
 
 .card:hover {
